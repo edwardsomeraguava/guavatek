@@ -16,7 +16,7 @@
             <router-link class="nav-item nav-link" to='/contact'>Contact Us</router-link>
           </div>
           <div class="navbar-nav ml-auto">
-            <router-link class="nav-item btn btn-danger btn-quote" to='/'>REQUEST QUOTE <icon name="envelope"></icon></router-link>
+            <router-link class="nav-item btn btn-danger btn-quote" to='/'>REQUEST QUOTE <icon name="caret-right"></icon></router-link>
           </div>
         </div>
       </div>
@@ -28,6 +28,29 @@
     <!-- end content -->
 
     <!-- footer -->
+    <footer>
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-6">  
+            <img class="img-fluid logo" src="./assets/guavatek-logo.png" alt="guavatek">  
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-md-12">  
+            <ul class="foot_nav"> 
+              <li><a href="/">HOME</a></li>
+              <li><a href="/about">ABOUT US</a></li>
+              <li><a href="/contact">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">  
+            <p class="">© 2018 GuavaTek. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- end footer -->
     
   </div>
@@ -53,8 +76,26 @@ export default {
       .nav-link { color:#fff; margin-right:2rem; margin-top:0.5rem; margin-bottom:0.5rem; transition: all .2s linear;}
       .nav-link.active, .nav-link:hover { border-bottom: 2px solid #fff; }
       .btn-quote {border-radius:0px;
-        .fa-icon {position: relative;top: 2px;}
+        .fa-icon {position: relative;top: 2px;font-size:20px;}
       }
+    }
+    footer{ min-height: 165px;color:#fff;background-color: #1D1D1D;
+      >.container {padding-top:20px;}
+      li {
+        list-style-type: none;
+        display: inline-block;
+      }
+      a, a:hover {
+        text-decoration: none;
+      }
+      ul{padding-left:0px;}
+      .foot_nav { margin-top: 15px;
+        li { margin-right: 20px; 
+          a { font-size: 1.325em; color: #fff; transition: all .2s linear; }
+          a:hover, a:focus, a:active { color: #EF6B6B; }
+        }
+      }
+
     }
   }
 
