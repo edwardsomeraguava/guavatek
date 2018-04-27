@@ -81,13 +81,8 @@ export default {
     }
     footer{ min-height: 165px;color:#fff;background-color: #1D1D1D;
       >.container {padding-top:20px;}
-      li {
-        list-style-type: none;
-        display: inline-block;
-      }
-      a, a:hover {
-        text-decoration: none;
-      }
+      li { list-style-type: none; display: inline-block; }
+      a, a:hover { text-decoration: none;}
       ul{padding-left:0px;}
       .foot_nav { margin-top: 15px;
         li { margin-right: 20px; 
